@@ -2,10 +2,9 @@ name: blackduck-hybrid-plugin-java
 kind: workflow
 apiVersion: automation.cloudbees.io/v1alpha1
 on:
-  workflow_dispatch:
   push:
     branches:
-      - 'main'
+      - main
   schedule:
     - cron: 15 20 * * 1-5
 permissions:
